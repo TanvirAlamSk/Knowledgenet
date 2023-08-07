@@ -1,0 +1,5 @@
+.offer-bg {
+    background-image: linear-gradient(to left, rgba(5, 5, 5, 0.5), rgba(30, 30, 30, .6)), url("../../assets/img/registration.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
