@@ -1,6 +1,5 @@
 .pic-ctn {
-    width: 100vw;
-    height: 200px;
+    /* height: 200px; */
 }
 
 @keyframes display {
@@ -32,9 +31,14 @@
 
 .pic-ctn {
     position: relative;
-    width: 100vw;
-    height: 300px;
-    margin-top: 15vh;
+    height: 220px;
+    margin-top: 20px;
+}
+
+.rounded-full {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
 .pic-ctn>.card-img {
@@ -55,4 +59,13 @@
 
 .card-img:nth-child(4) {
     animation-delay: 15s;
+}
+
+@media screen and (max-width:570px) {
+    .pic-ctn {
+
+        height: 450px;
+
+    }
+
 }

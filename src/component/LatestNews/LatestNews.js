@@ -59,13 +59,14 @@ const newsCarts = [
         title: "Deno unveils faster,simpler API"
 
     }
+    // lg: m - 20 carousel-end
 ]
 const LatestNews = () => {
     return (
-        <div className='latest-news'>
-
-            <div className="carousel carousel-end  m-20 gap-x-8">
-
+        <div className=' latest-news lg:my-20'>
+            <h2 className='text-yellow-400 text-4xl font-semibold p-10 pb-0 lg:ml-10'>Latest News</h2>
+            <p className='text-white text-xl font-semibold ml-10 lg:ml-20 p-0'>Education news all over the world.</p>
+            <div className=" carousel carousel rounded-box  gap-8 p-10  w-full">
 
                 {newsCarts.map((cart) => <LatestNewsCard key={cart.id} cart={cart}></LatestNewsCard>)}
             </div>
