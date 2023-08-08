@@ -10,6 +10,7 @@ import Courses from "../pages/Courses/Courses";
 import Membership from "../pages/Membership/Membership";
 import CourseDetails from "../pages/CourseDetails/CourseDetails";
 import Teachers from "../pages/Teachers/Teachers";
+import PrivateRouter from "./PrivateRouter";
 export const router = createBrowserRouter([
     {
         path: "/", element: <Main></Main>, children: [
@@ -20,11 +21,11 @@ export const router = createBrowserRouter([
                 path: "/course", element: <Courses></Courses>
             },
             {
-                path: "/course/:id", loader: ({ params }) => fetch(`http://localhost:5000/course/${params.id}`), element: <CourseDetails></CourseDetails>
+                path: "/course/:id", loader: ({ params }) => fetch(`https://knowledgenet-serverside.vercel.app/course/${params.id}`), element: <PrivateRouter><CourseDetails></CourseDetails></PrivateRouter>
             },
             {
                 path: "/teachers",
-                loader: () => fetch("http://localhost:5000/teachers"),
+                loader: () => fetch("https://knowledgenet-serverside.vercel.app/teachers"),
                 element: <Teachers></Teachers>
             },
             {
@@ -42,7 +43,7 @@ export const router = createBrowserRouter([
             {
                 path: "/blog",
                 loader: () => {
-                    return fetch("http://localhost:5000/blog")
+                    return fetch("https://knowledgenet-serverside.vercel.app/blog")
                 },
                 element: <Blog></Blog>
             }
