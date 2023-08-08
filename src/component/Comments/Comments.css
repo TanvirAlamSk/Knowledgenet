@@ -1,5 +1,5 @@
 .pic-ctn {
-    /* height: 200px; */
+    height: 300px;
 }
 
 @keyframes display {
@@ -31,7 +31,7 @@
 
 .pic-ctn {
     position: relative;
-    height: 220px;
+    height: 400px;
     margin-top: 20px;
 }
 
@@ -61,10 +61,10 @@
     animation-delay: 15s;
 }
 
-@media screen and (max-width:570px) {
+@media screen and (max-width:670px) {
     .pic-ctn {
 
-        height: 450px;
+        height: 500px;
 
     }
 
