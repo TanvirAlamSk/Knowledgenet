@@ -22,7 +22,7 @@ const HeaderSectionItem = ({ image, i }) => {
     return (
         <div id={`slide${i}`} className="carousel-item relative w-full">
             <img src={image} className="w-full bg-slate-900" alt='' />
-            <div className="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <div className="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-2/3">
 
                 <div>
                     <a href={`#slide${prev}`} className="btn btn-warning  btn-circle ">❮</a>
@@ -40,7 +40,7 @@ const HeaderSectionItem = ({ image, i }) => {
                                     <FaChalkboardTeacher className='w-12 text-yellow-500' ></FaChalkboardTeacher>
                                 </figure>
 
-                                <div className="card-body">
+                                <div className="card-body mb-2">
                                     <h2 className="card-title font-bold">BEST INDUSTRY <br></br> LEADERS</h2>
                                     <Link to=""><button className=" btn btn-sm btn-warning ">Visit</button></Link>
 

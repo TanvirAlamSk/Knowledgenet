@@ -10,6 +10,7 @@ const UserContext = ({ children }) => {
 
     const [user, setUser] = useState([]);
     const [loader, setLoader] = useState(true)
+    const [theme, setTheme] = useState("light")
 
     const googleProvider = new GoogleAuthProvider()
     const githubProvider = new GithubAuthProvider()
@@ -73,7 +74,7 @@ const UserContext = ({ children }) => {
     }, [])
 
 
-    const authinfo = { user, loader, createUser, googlesignin, githubsignin, logout, userLogin }
+    const authinfo = { user, loader, theme, setTheme, createUser, googlesignin, githubsignin, logout, userLogin }
     return (
         <div>
             <AuthContext.Provider value={authinfo}>{children}</AuthContext.Provider>

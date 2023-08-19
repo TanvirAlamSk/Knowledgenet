@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-    const [mode, setMode] = useState("auto");
+
     return (
         <div className="">
             <footer id="footer" className="relative z-50 dark:bg-gray-900 mt-20">

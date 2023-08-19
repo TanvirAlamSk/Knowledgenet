@@ -1,3 +1,21 @@
+.dark {
+  background-color: #333;
+  color: orangered;
+}
+
+.light {
+  background-color: #fff;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
 /* .App {
   text-align: center;
 }
